@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Exo&family=Quicksand&family=Roboto:wght@100&display=swap');
+
+* {
+    font-family: Exo, sans-serif;
+
+}
+
+body {
+    background-color: #F7F9F9;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    background-color: #262626;
+    height: 3.5rem;
+    z-index: 1;
+}
+
+.pub {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    float: right;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+aside {
+    background-color: #306c3c;
+    width: 5%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 1em 0;
+    z-index: 2;
+}
+
+.logo {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0 auto;
+    width: max-content;
+    display: grid;
+    place-items: center;
+    height: 75%;
+}
+
+.menu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0.5em 1.5em;
+    width: 100%;
+}
+
+.menu button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #f7f9f92b;
+    transition: all 300ms ease-in-out;
+}
+
+.menu button:hover::before {
+    width: 100%;
+}
+
+.menu button:not(:first-child) {
+    margin-top: 2.5em;
+}
+
+.menu button img {
+    height: 32px;
+    width: 32px;
+}
+
+#fan {
+    filter: brightness(80%);
+}
+
+.pageheader {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 4.5rem;
+    top: 3.5rem;
+    bottom: 0em;
+    right: 0;
+    align-items: center;
+}
+
+.backgroundimage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/MNobrega30112023.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(35%);
+}
+
+.textheader {
+    font-size: 2.1em;
+    font-weight: 400;
+    text-align: center;
+    color: #F7F9F9;
+    filter: brightness(100%);
+}
+
+
+
+footer {
+    font-size: 0.4em;
+    color: #F7F9F9;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #262626;
+    z-index: 1;
+    padding-left: 2em;
+}
+
+footer a {
+    color: white;
+}
+
+.container {
+    height: auto;
+    width: 94%;
+    position: absolute;
+    left: 4.5rem;
+    top: 3.5rem;
+    padding-bottom: 5em;
+}
+
+.newstitle {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsboard {
+    gap: 1em;
+    display: flex;
+    height: 35rem;
+    justify-content: space-around;
+}
+
+.news {
+    width: 25%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+}
+
+.news img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-news h1 {
+    font-size: 23px;
+}
+
+.text-news h2 {
+    font-size: 15px;
+}
+
+.contacttitle {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.contactform {
+    height: 35em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20em;
+}
+
+form {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 36px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 7.5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form button {
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.autretitle {
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+}
+
+.docpages {
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.docpages img {
+    height: 900px;
+}
+
+.openpdf button {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.legalnoticetitle {
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+}
+
+.legalnotice {
+    display: flex;
+    justify-content: center;
+}
+
+.legalnoticetext {
+    width: 60%;
+}
+
+table {
+    border-spacing: 10px;
+    font-size: 26px;
+}
+
+.shop {
+    width: 100%;
+}
+
+
+.shirtvideo {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 5rem;
+}
+
+
+.market {
+    display: flex;
+    height: 35rem;
+    justify-content: space-around;
+    padding-bottom: 13rem;
+}
+
+.productcard {
+    width: 30%;
+    height: 48rem;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.productimg img{
+    width: 100%;
+}
+
+.producttext{
+    font-size: 10px;
+}
+
+.productprice{
+   font-size: 9px;
+}
+
+.green-button {
+    background-color: #3eaf7c;
+    color: #fff;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 50%;
+    border-radius: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1400px) {
+    aside {
+        width: 100px;
+    }
+
+    header {
+        height: 4rem;
+    }
+
+    .pub img {
+        height: 30px;
+    }
+
+    .logo img {
+        height: 80px;
+    }
+
+    .menu button img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .pageheader {
+        top: 4rem;
+        left: 6.2rem;
+    }
+
+    .menu button {
+        padding: 1em 2em;
+    }
+
+    .textheader {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 0.5rem;
+    }
+
+    .newstitle {
+        font-size: 20px;
+    }
+
+    .news {
+        width: 20%;
+    }
+
+    .text-news h1 {
+        font-size: 15px;
+    }
+
+    .text-news h2 {
+        font-size: 10px;
+    }
+
+    .newsboard {
+        height: auto;
+   
+    }
+
+    .container {
+        left: 6rem;
+        width: 92%;
+    }
+
+    .news {
+        width: 25%;
+    }
+
+    .docpages img {
+        height: 300px;
+    }
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+    .market {
+        display: grid;
+        gap: 5rem;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 140rem;
+    }
+
+    .productcard {
+        width: 100%;
+        height: 54rem;
+        box-sizing: border-box;
+        
+    }
+
+    .green-button {
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    .videotitle h1{
+        font-size: 25px;
+    }
+}
+
+
+
+@media screen and (max-width:950px) {
+    .textheader {
+        font-size: 1rem;
+    }
+
+    .newsboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    }   
+
+    .news {
+        width: 50%;
+    }
+
+    .contacttitle {
+        font-size: 30px;
+    }
+
+
+
+
+@media screen and (max-width:300px) {
+    aside {
+        width: 50px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .menu button img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .menu button {
+        padding: 1em 0.8em;
+    }
+
+    .pageheader {
+        left: 3.1rem;
+    }
+
+    .pub img {
+        height: 20px;
+    }
+
+    .textheader {
+        font-size: 0.6rem;
+    }
+
+    .news {
+        width: 75%;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .contacttitle {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    textarea {
+        font-size: 20px;
+    }
+
+    .autretitle {
+        font-size: 30px;
+    }
+
+    .docpages img {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .openpdf button {
+        font-size: 20px;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .legalnoticetitle {
+        font-size: 25px;
+    }
+
+    iframe{
+        width: 420px;
+        height: 236px;
+    }
+    .productcard {
+        width: 80%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        height: 46rem;
+    }
+
+    .green-button {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .videotitle h1{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .contacttitle {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    footer h1 {
+        font-size: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 80%;
+
+    }
+
+    .autretitle {
+        font-size: 15px;
+    }
+
+    .docpages {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .legalnoticetitle {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .contacttitle {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    footer h1 {
+        font-size: 8px;
+    }
+
+    .docpages {
+        display: none;
+    }
+
+    .legalnoticetitle {
+        font-size: 15px;
+    }
+    .productcard{
+        margin: 0 auto
+    }
+    .videotitle h1{
+        font-size: 20px;
+    }
+    .productcard{
+        height: 38rem;
+        margin-left: 4rem;
+    }
+    iframe{
+        width: 300px;
+        height: 177px;
+    }
+}
